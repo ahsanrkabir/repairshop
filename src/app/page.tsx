@@ -1,4 +1,7 @@
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import Link from "next/link";
+
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
@@ -19,6 +22,9 @@ const Home = () => {
           <Link href="tel:5555555555" className="hover:underline">
             555-555-5555
           </Link>
+          <Button asChild>
+            <LoginLink>Sign In</LoginLink>
+          </Button>
         </div>
       </main>
     </div>
